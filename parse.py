@@ -731,10 +731,10 @@ class BottomUpParser(object):
                             else:
                                 str += " (" + tree[j] + ")"
                             j += 1
-                            new_tree.append(str)
-                            l += 1
                         else:
                             break
+                        new_tree.append(str)
+                        l += 1
 
             tree = new_tree[:]
             level +=1
